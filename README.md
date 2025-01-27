@@ -5,15 +5,7 @@ A web application that generates images from text prompts using OpenAI's DALL-E 
 ## Project Structure
 
 
-DALL-E_Text-to-Image/
-├── generated_images/       # Folder containing generated images
-│   └── example_image.png   # Example generated image
-├── .env                    # Environment variables file
-├── dalle_app.py            # Streamlit application script
-├── dalle_generate.py       # Script for local testing
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-
+DALL-E_Text-to-Image/ ├── generated_images/ # Folder containing generated images │ ├── example_image1.png # Example generated image 1 │ └── example_image2.png # Example generated image 2 ├── .env # Environment variables file ├── dalle_app.py # Streamlit application script ├── dalle_generate.py # Script for local testing ├── requirements.txt # Python dependencies └── README.md # Project documentation
 
 ## Example Generated Image
 
