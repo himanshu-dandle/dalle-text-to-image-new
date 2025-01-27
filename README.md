@@ -1,20 +1,26 @@
-DALL-E Text-to-Image Generator
-This project implements a DALL-E Text-to-Image Generator using OpenAI's API. It offers both a Command-Line Interface (CLI) and a Streamlit-based Web App for users to generate images from text prompts interactively.
+# DALL-E Text-to-Image Generator
 
-Project Structure
+A web application that generates images from text prompts using OpenAI's DALL-E API.
+
+## Project Structure
 
 
-project/
-├── dalle_generate.py       # Command-line tool for image generation
-├── dalle_app.py            # Streamlit-based web app
-├── requirements.txt        # List of dependencies for the project
-├── generated_images/       # Folder for storing generated images
-│   ├── futuristic_city_512x512.png
-│   ├── serene_beach_256x256.png
-├── assets/                 # (Optional) Folder for README image examples
-│   ├── example_image.png
-│   ├── docker_build1.png
-├── README.md               # Documentation for the project
+DALL-E_Text-to-Image/
+├── generated_images/       # Folder containing generated images
+│   └── example_image.png   # Example generated image
+├── .env                    # Environment variables file
+├── dalle_app.py            # Streamlit application script
+├── dalle_generate.py       # Script for local testing
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+
+
+## Example Generated Image
+
+![A panda eating bamboo under cherry blossoms](generated_images/A_panda_eating_bamboo_under_cherry_blossoms_1024x1024.png)
+
+*Description: A panda eating bamboo under cherry blossoms.*
+
 
 
 Features
@@ -96,4 +102,9 @@ Future Enhancements
 	
 License
 This project is open-source under the MIT License.
+
+Acknowledgments
+OpenAI for the DALL-E API
+Streamlit for the web application framework
+Inspired by similar projects in the community
 
