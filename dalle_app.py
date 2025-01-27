@@ -5,13 +5,9 @@ from io import BytesIO
 import os
 import re
 import streamlit as st
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Set your OpenAI API key from the environment variable
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# Load OpenAI API key from Streamlit Secrets (preferred method for Streamlit Cloud)
+openai.api_key = st.secrets["openai"]["OPENAI_API_KEY"]
 
 def generate_image(prompt, resolution="512x512"):
     """
@@ -49,7 +45,7 @@ def generate_image(prompt, resolution="512x512"):
         image.save(file_name)
         return file_name
 
-    except openai.error.OpenAIError as e:
+    except Exception as e:
         st.error(f"An error occurred: {e}")
         return None
 
