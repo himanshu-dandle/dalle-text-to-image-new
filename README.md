@@ -93,6 +93,7 @@ Web App
 	streamlit run dalle_app.py
 2. Open the link provided by Streamlit (e.g., http://localhost:8501).
 3. Enter your prompt and select a resolution to generate an image.
+4. The generated image will be displayed on the web app.
 
 Output
 All generated images are saved in the generated_images/ folder with the naming convention:
@@ -102,26 +103,35 @@ Example:
 For the prompt "A futuristic city with flying cars" at 512x512 resolution:
 **Saved as: generated_images/futuristic_city_with_flying_cars_512x512.png
 
-Sample Prompts
-***Nature: "A serene beach with a pink sunset and palm trees"
-***Futuristic: "A futuristic cityscape with flying cars under neon lights"
-***Abstract: "An abstract painting of a dreamscape with floating islands"
+## Sample Prompts
+
+- **Nature**: "A serene beach with a pink sunset and palm trees"
+- **Futuristic**: "A futuristic cityscape with flying cars under neon lights"
+- **Abstract**: "An abstract painting of a dreamscape with floating islands"
 
 
-Deployment
-Deploy on Streamlit Cloud
+
+## Deployment
+
+### Deploy on Streamlit Cloud
 1. Push the project to a GitHub repository.
-2. Deploy on Streamlit Cloud:
-		Log in with GitHub.
-		Select your repository and specify dalle_app.py as the main file.
-		Share the generated public URL.
-Future Enhancements
-***Add batch image generation for multiple prompts.
-***Explore additional resolutions or advanced image styles.
-***Integrate Stable Diffusion or other open-source image generation models.
+2. Deploy on **Streamlit Cloud**:
+   1. Log in to Streamlit Cloud using your **GitHub** account.
+   2. Select your repository and specify `dalle_app.py` as the main file.
+   3. After deployment, Streamlit will provide a public URL for your app.
+   4. Share this URL to access the deployed app.
 
-License
-This project is open-source under the MIT License.
+
+## Future Enhancements
+
+- Add batch image generation for multiple prompts.
+- Explore additional resolutions or advanced image styles.
+- Integrate **Stable Diffusion** or other open-source image generation models.
+
+
+## License
+
+This project is open-source under the **MIT License**. You can freely use, modify, and distribute the code as long as you include the license.
 
 Acknowledgments
 ***OpenAI for the DALL-E API
