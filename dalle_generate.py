@@ -6,7 +6,7 @@ import os
 import re
 
 # Set your OpenAI API key
-openai.api_key = "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"  # Replace with your actual API key
+openai.api_key = "YOUR_API_KEY"  # Replace with your actual API key
 
 def generate_image(prompt, resolution="512x512"):
     """
