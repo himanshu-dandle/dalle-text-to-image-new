@@ -5,9 +5,13 @@ from io import BytesIO
 import os
 import re
 import streamlit as st
+from dotenv import load_dotenv
 
-# Set your OpenAI API key
-openai.api_key = "OPENAI_API_KEY"  # Replace with your actual API key
+# Load environment variables from .env file
+load_dotenv()
+
+# Set your OpenAI API key from the environment variable
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def generate_image(prompt, resolution="512x512"):
     """

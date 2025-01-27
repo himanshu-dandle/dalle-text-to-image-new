@@ -31,5 +31,8 @@ desktop.ini
 # VS Code settings
 .vscode/
 
-# Generated image outputs
+
+# env
+.env
+
 
